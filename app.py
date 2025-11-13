@@ -4,15 +4,31 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Welcome to the Homepage!"
+    return render_template('menu.html')
 
-@app.route('/about')
-def about():
-    return "This is the About Page."
+@app.route('/international/adult/form')
+def international_adult():
+    return render_template("form_international_adult.html")
 
-@app.route('/contact')
-def contact():
-    return "Contact us at: info@example.com."
+@app.route('/national/adult/form')
+def national_adult():
+    return render_template("form_national_adult.html")
+
+@app.route('/international/child/form')
+def international_child():
+    return render_template("form_international_child.html")
+
+@app.route('/national/child/form')
+def national_child():
+    return render_template("form_national_child.html")
+
+@app.route('/register')
+def register():
+    return render_template("register.html")
+
+@app.route('/submit')
+def submit():
+    return render_template("submit.html")
 
 if __name__ == '__main__':
     app.run(debug=True)

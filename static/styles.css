@@ -25,3 +25,12 @@ body {
     background-color: #fafafa;
     color: #333;
 }
+
+.trial {
+background-color: #fe4eda;
+border: 2px solid green;
+font-family: 'Calibri', sans-serif;
+color: #304e5e;
+font-weight: bold;
+font-style: italic;
+}

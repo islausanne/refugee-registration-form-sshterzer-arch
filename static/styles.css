@@ -19,12 +19,40 @@
     font-style: italic;
 }
 
-body {
+.body {
     font-family: 'Calibri', sans-serif;
     margin: 40px;
     background-color: #fafafa;
     color: #333;
 }
+
+.bold {
+font-family: 'Calibri', sans-serif;
+colour: #333
+font-weight: bold;
+}
+
+.bold-italic {
+font-family: 'Calibri', sans-serif;
+colour: #333
+font-weight: bold;
+font-style: italic;
+}
+
+.italic {
+font-family: 'Calibri', sans-serif;
+colour: #333
+font-style: italic;
+}
+
+.menu_option {
+background-color: #a9ba9b;
+border: 5px #8b997f;
+font-family: 'Calibri', sans-serif;
+color: #333;
+font-weight: bold;
+}
+
 /* Relevant class variables and how to call them:
 /*.trial {
 background-color: #fe4eda;

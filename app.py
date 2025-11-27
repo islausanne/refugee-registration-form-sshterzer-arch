@@ -12,6 +12,10 @@ app = Flask(__name__)
 def home():
     return render_template('menu.html')
 
+@app.route('/menu/form')
+def menu_form():
+    return render_template('form_menu.html')
+
 @app.route('/international/adult/form')
 def international_adult():
     return render_template("form_international_adult.html")
@@ -20,11 +24,11 @@ def international_adult():
 def national_adult():
     return render_template("form_national_adult.html")
 
-@app.route('/international/child/form')
+@app.route('/international/child/form', methods=['POST'])
 def international_child():
     return render_template("form_international_child.html")
 
-@app.route('/national/child/form')
+@app.route('/national/child/form', methods=['POST'])
 def national_child():
     return render_template("form_national_child.html")
 

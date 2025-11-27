@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>Title</title>
 </head>
 <body>
+    <div class="bold">
+    <h1>International Adult - Registration Form</h1>
+    </div>
+
+    <form method="POST" action="/submit">
+      <input type="text" name="first_name" placeholder="First name">
+      <input type="text" name="last_name" placeholder="Last name">
+      <input type="number" name="age" placeholder="Age">
+      <button type="submit">Register</button>
+    </form>
 
 </body>
 </html>
